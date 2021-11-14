@@ -27,10 +27,10 @@ struct LottieAnimationview: UIViewRepresentable {
         //프로그레스 바를 옮길때 Lottie 이미지를 업데이트한다..
         //UIView로 감쌋기때문에, 직접 값을 바꾸진 못하고, 애니메이셔 뷰를 제거하고 생성한다.
         uiView.subviews.forEach{ view in
-            //if view.tag == 1009{
+            if view.tag == 1009{
                 //제거 과정
                 view.removeFromSuperview()
-            //}
+            }
         }
         //생성 과정
         addAnimatioinView(rootView: uiView)
@@ -40,6 +40,8 @@ struct LottieAnimationview: UIViewRepresentable {
         
         //lottie 이미지를 위치시키는 애니메이션 뷰
         let animationView = AnimationView(name: jsonFile, bundle: .main)
+        
+        animationView.currentProgress = 0.5 + (progress / 2)
         animationView.backgroundColor = .clear
         animationView.tag = 1009
         //뷰 사이즈가 제약에 맞춰서 리사이징 되는것을 막음

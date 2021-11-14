@@ -37,8 +37,9 @@ struct feelingEmojiView: View{
             GeometryReader{proxy in
                 let size = proxy.size
                 LottieAnimationview(jsonFile: "feeling_emoji",
-                                    progress: .constant(0.4))
+                                    progress: $currentSliderProgress)
                     .frame(width: size.width, height: size.height)
+                    .scaleEffect(2)
                 //직접 애니매이션 뷰의 lottie 이미지 사이즈를 조정 불가능하다...
                 //UIView로 덮어서 사이즈를 조정할 수 있다.
                     //.frame(width: 300, height: 300)
@@ -69,8 +70,6 @@ struct feelingEmojiView: View{
                         })
                         .onChanged({value in
                             
-                            let width = UIScreen.main.bounds.width - 30
-                            
                             var translation = value.location.x
                         
                             //stop start , end
@@ -79,15 +78,20 @@ struct feelingEmojiView: View{
                             translation = translation < 145 ? translation : 145
                             translation = isDragging ? translation : 0
                             offset = translation
-                            print(offset)
+                            let progress = (translation + 145) / 290
+                            //0~1
+                            currentSliderProgress = progress
                         })
                 )
             }
             .padding(.bottom, 20)
+            .offset(y: -10)
             
             //컨펌 버튼
             Button{
-                
+                let star = (currentSliderProgress * 5).rounded()
+                print(star)
+ 
             }label: {
                 Text("Done")
                     .font(.title3)
@@ -103,6 +107,8 @@ struct feelingEmojiView: View{
             }
             .padding(.horizontal, 15)
             
+            
+            
         }
         .padding(15)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -116,8 +122,19 @@ struct feelingEmojiView: View{
                 startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
         )
+        .overlay(
+            Button(action: {},label:{
+                Image(systemName: "xmark")
+                    .font(.title2)
+                    .foregroundColor(.black)
+            })
+                .padding(.trailing)
+                .padding(.top)
+            , alignment: .topTrailing
+        )
         
     }
+    
     func getAttributedstring()-> AttributedString{
         var str = AttributedString("당신의 상태는?")
         if let range = str.range(of: "상태는?"){
