@@ -12,13 +12,32 @@ struct LottieAnimationview: UIViewRepresentable {
 
     var jsonFile: String
     @Binding var progress: CGFloat
+    
     func makeUIView(context: Context) -> UIView {
-        
         
         //UIView 를 만들고, lottie 이미지를 센터에 위치시킨다.
         let rootView = UIView()
         rootView.backgroundColor = .clear
-
+        addAnimatioinView(rootView: rootView)
+        return rootView
+        
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
+        //프로그레스 바를 옮길때 Lottie 이미지를 업데이트한다..
+        //UIView로 감쌋기때문에, 직접 값을 바꾸진 못하고, 애니메이셔 뷰를 제거하고 생성한다.
+        uiView.subviews.forEach{ view in
+            //if view.tag == 1009{
+                //제거 과정
+                view.removeFromSuperview()
+            //}
+        }
+        //생성 과정
+        addAnimatioinView(rootView: uiView)
+    }
+    
+    func addAnimatioinView(rootView: UIView){
+        
         //lottie 이미지를 위치시키는 애니메이션 뷰
         let animationView = AnimationView(name: jsonFile, bundle: .main)
         animationView.backgroundColor = .clear
@@ -31,15 +50,8 @@ struct LottieAnimationview: UIViewRepresentable {
             animationView.widthAnchor.constraint(equalTo: rootView.widthAnchor),
             animationView.heightAnchor.constraint(equalTo: rootView.heightAnchor),
         ]
-        
         rootView.addSubview(animationView)
         rootView.addConstraints(constraints)
-        
-        return rootView
-        
-    }
-    
-    func updateUIView(_ uiView: UIView, context: Context) {
         
     }
 }
