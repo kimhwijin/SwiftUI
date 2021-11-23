@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBB5E7F2274CD33E0053EE5C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7F1274CD33E0053EE5C /* Tests_iOS.swift */; };
+		FBB5E7F4274CD33E0053EE5C /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7F3274CD33E0053EE5C /* Tests_iOSLaunchTests.swift */; };
+		FBB5E7FE274CD33E0053EE5C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7FD274CD33E0053EE5C /* Tests_macOS.swift */; };
+		FBB5E800274CD33E0053EE5C /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7FF274CD33E0053EE5C /* Tests_macOSLaunchTests.swift */; };
+		FBB5E801274CD33E0053EE5C /* PaperScrollAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7D9274CD33D0053EE5C /* PaperScrollAnimationApp.swift */; };
+		FBB5E802274CD33E0053EE5C /* PaperScrollAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7D9274CD33D0053EE5C /* PaperScrollAnimationApp.swift */; };
+		FBB5E803274CD33E0053EE5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7DA274CD33D0053EE5C /* ContentView.swift */; };
+		FBB5E804274CD33E0053EE5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E7DA274CD33D0053EE5C /* ContentView.swift */; };
+		FBB5E805274CD33E0053EE5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB5E7DB274CD33E0053EE5C /* Assets.xcassets */; };
+		FBB5E806274CD33E0053EE5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB5E7DB274CD33E0053EE5C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBB5E7EE274CD33E0053EE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBB5E7D4274CD33D0053EE5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBB5E7DF274CD33E0053EE5C;
+			remoteInfo = "PaperScrollAnimation (iOS)";
+		};
+		FBB5E7FA274CD33E0053EE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBB5E7D4274CD33D0053EE5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBB5E7E5274CD33E0053EE5C;
+			remoteInfo = "PaperScrollAnimation (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBB5E7D9274CD33D0053EE5C /* PaperScrollAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperScrollAnimationApp.swift; sourceTree = "<group>"; };
+		FBB5E7DA274CD33D0053EE5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBB5E7DB274CD33E0053EE5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB5E7E0274CD33E0053EE5C /* PaperScrollAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperScrollAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB5E7E6274CD33E0053EE5C /* PaperScrollAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperScrollAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB5E7E8274CD33E0053EE5C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FBB5E7ED274CD33E0053EE5C /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB5E7F1274CD33E0053EE5C /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		FBB5E7F3274CD33E0053EE5C /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		FBB5E7F9274CD33E0053EE5C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB5E7FD274CD33E0053EE5C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		FBB5E7FF274CD33E0053EE5C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB5E7DD274CD33E0053EE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7E3274CD33E0053EE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7EA274CD33E0053EE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7F6274CD33E0053EE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB5E7D3274CD33D0053EE5C = {
+			isa = PBXGroup;
+			children = (
+				FBB5E7D8274CD33D0053EE5C /* Shared */,
+				FBB5E7E7274CD33E0053EE5C /* macOS */,
+				FBB5E7F0274CD33E0053EE5C /* Tests iOS */,
+				FBB5E7FC274CD33E0053EE5C /* Tests macOS */,
+				FBB5E7E1274CD33E0053EE5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB5E7D8274CD33D0053EE5C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5E7D9274CD33D0053EE5C /* PaperScrollAnimationApp.swift */,
+				FBB5E7DA274CD33D0053EE5C /* ContentView.swift */,
+				FBB5E7DB274CD33E0053EE5C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FBB5E7E1274CD33E0053EE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5E7E0274CD33E0053EE5C /* PaperScrollAnimation.app */,
+				FBB5E7E6274CD33E0053EE5C /* PaperScrollAnimation.app */,
+				FBB5E7ED274CD33E0053EE5C /* Tests iOS.xctest */,
+				FBB5E7F9274CD33E0053EE5C /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB5E7E7274CD33E0053EE5C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5E7E8274CD33E0053EE5C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		FBB5E7F0274CD33E0053EE5C /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5E7F1274CD33E0053EE5C /* Tests_iOS.swift */,
+				FBB5E7F3274CD33E0053EE5C /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		FBB5E7FC274CD33E0053EE5C /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5E7FD274CD33E0053EE5C /* Tests_macOS.swift */,
+				FBB5E7FF274CD33E0053EE5C /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB5E7DF274CD33E0053EE5C /* PaperScrollAnimation (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB5E809274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "PaperScrollAnimation (iOS)" */;
+			buildPhases = (
+				FBB5E7DC274CD33E0053EE5C /* Sources */,
+				FBB5E7DD274CD33E0053EE5C /* Frameworks */,
+				FBB5E7DE274CD33E0053EE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaperScrollAnimation (iOS)";
+			productName = "PaperScrollAnimation (iOS)";
+			productReference = FBB5E7E0274CD33E0053EE5C /* PaperScrollAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBB5E7E5274CD33E0053EE5C /* PaperScrollAnimation (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB5E80C274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "PaperScrollAnimation (macOS)" */;
+			buildPhases = (
+				FBB5E7E2274CD33E0053EE5C /* Sources */,
+				FBB5E7E3274CD33E0053EE5C /* Frameworks */,
+				FBB5E7E4274CD33E0053EE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PaperScrollAnimation (macOS)";
+			productName = "PaperScrollAnimation (macOS)";
+			productReference = FBB5E7E6274CD33E0053EE5C /* PaperScrollAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBB5E7EC274CD33E0053EE5C /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB5E80F274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				FBB5E7E9274CD33E0053EE5C /* Sources */,
+				FBB5E7EA274CD33E0053EE5C /* Frameworks */,
+				FBB5E7EB274CD33E0053EE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB5E7EF274CD33E0053EE5C /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = FBB5E7ED274CD33E0053EE5C /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FBB5E7F8274CD33E0053EE5C /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB5E812274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				FBB5E7F5274CD33E0053EE5C /* Sources */,
+				FBB5E7F6274CD33E0053EE5C /* Frameworks */,
+				FBB5E7F7274CD33E0053EE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB5E7FB274CD33E0053EE5C /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = FBB5E7F9274CD33E0053EE5C /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB5E7D4274CD33D0053EE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FBB5E7DF274CD33E0053EE5C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FBB5E7E5274CD33E0053EE5C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FBB5E7EC274CD33E0053EE5C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FBB5E7DF274CD33E0053EE5C;
+					};
+					FBB5E7F8274CD33E0053EE5C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FBB5E7E5274CD33E0053EE5C;
+					};
+				};
+			};
+			buildConfigurationList = FBB5E7D7274CD33D0053EE5C /* Build configuration list for PBXProject "PaperScrollAnimation" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBB5E7D3274CD33D0053EE5C;
+			productRefGroup = FBB5E7E1274CD33E0053EE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB5E7DF274CD33E0053EE5C /* PaperScrollAnimation (iOS) */,
+				FBB5E7E5274CD33E0053EE5C /* PaperScrollAnimation (macOS) */,
+				FBB5E7EC274CD33E0053EE5C /* Tests iOS */,
+				FBB5E7F8274CD33E0053EE5C /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB5E7DE274CD33E0053EE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB5E805274CD33E0053EE5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7E4274CD33E0053EE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB5E806274CD33E0053EE5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7EB274CD33E0053EE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7F7274CD33E0053EE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB5E7DC274CD33E0053EE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB5E803274CD33E0053EE5C /* ContentView.swift in Sources */,
+				FBB5E801274CD33E0053EE5C /* PaperScrollAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7E2274CD33E0053EE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB5E804274CD33E0053EE5C /* ContentView.swift in Sources */,
+				FBB5E802274CD33E0053EE5C /* PaperScrollAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7E9274CD33E0053EE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB5E7F4274CD33E0053EE5C /* Tests_iOSLaunchTests.swift in Sources */,
+				FBB5E7F2274CD33E0053EE5C /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB5E7F5274CD33E0053EE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB5E800274CD33E0053EE5C /* Tests_macOSLaunchTests.swift in Sources */,
+				FBB5E7FE274CD33E0053EE5C /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBB5E7EF274CD33E0053EE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBB5E7DF274CD33E0053EE5C /* PaperScrollAnimation (iOS) */;
+			targetProxy = FBB5E7EE274CD33E0053EE5C /* PBXContainerItemProxy */;
+		};
+		FBB5E7FB274CD33E0053EE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBB5E7E5274CD33E0053EE5C /* PaperScrollAnimation (macOS) */;
+			targetProxy = FBB5E7FA274CD33E0053EE5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBB5E807274CD33E0053EE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBB5E808274CD33E0053EE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FBB5E80A274CD33E0053EE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.PaperScrollAnimation;
+				PRODUCT_NAME = PaperScrollAnimation;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBB5E80B274CD33E0053EE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.PaperScrollAnimation;
+				PRODUCT_NAME = PaperScrollAnimation;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB5E80D274CD33E0053EE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.PaperScrollAnimation;
+				PRODUCT_NAME = PaperScrollAnimation;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBB5E80E274CD33E0053EE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.PaperScrollAnimation;
+				PRODUCT_NAME = PaperScrollAnimation;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FBB5E810274CD33E0053EE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PaperScrollAnimation (iOS)";
+			};
+			name = Debug;
+		};
+		FBB5E811274CD33E0053EE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PaperScrollAnimation (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB5E813274CD33E0053EE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "PaperScrollAnimation (macOS)";
+			};
+			name = Debug;
+		};
+		FBB5E814274CD33E0053EE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "PaperScrollAnimation (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB5E7D7274CD33D0053EE5C /* Build configuration list for PBXProject "PaperScrollAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5E807274CD33E0053EE5C /* Debug */,
+				FBB5E808274CD33E0053EE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB5E809274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "PaperScrollAnimation (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5E80A274CD33E0053EE5C /* Debug */,
+				FBB5E80B274CD33E0053EE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB5E80C274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "PaperScrollAnimation (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5E80D274CD33E0053EE5C /* Debug */,
+				FBB5E80E274CD33E0053EE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB5E80F274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5E810274CD33E0053EE5C /* Debug */,
+				FBB5E811274CD33E0053EE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB5E812274CD33E0053EE5C /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB5E813274CD33E0053EE5C /* Debug */,
+				FBB5E814274CD33E0053EE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBB5E7D4274CD33D0053EE5C /* Project object */;
+}
