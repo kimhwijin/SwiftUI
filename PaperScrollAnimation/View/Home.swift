@@ -76,10 +76,34 @@ struct LetterCardView: View{
             Color.white
                 .cornerRadius(6)
         )
+        //masking view , like letter is shrinking
+        .mask(){
+            Rectangle()
+                .padding(.top, rect.minY < 0 ? -rect.minY : 0)
+        }
+        .offset(y: rect.minY < 0 ? rect.minY : 0)
         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 5, y: 5)
         //stop back ward scrolling...
+        //이곳에서 스크롤을 멈추고 위치시키는 이유는 돌돌말려진 편지를 표현하려면 스크린에 계속 있어야 되기때문에.
+        
+        //돌돌 말리는 친구
+        .overlay(
+            Rectangle()
+                .fill(Color.black)
+                .frame(height: 30 * getProgress())
+            , alignment: .top
+        )
+        
         .offset(y: rect.minY < 0 ? -rect.minY : 0)
         .modifier(OffsetModifier(rect: $rect))
+    }
+    
+    
+    //몇퍼센트 스크롤 되고있는지...
+    func getProgress()->CGFloat{
+        let progress = -rect.minY / rect.height
+        
+        return (progress > 0 ? (progress < 1 ? progress : 1) : 0)
     }
         
 }
