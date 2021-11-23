@@ -88,15 +88,22 @@ struct LetterCardView: View{
         
         //돌돌 말리는 친구
         .overlay(
-            Rectangle()
-                .fill(Color.black)
-                .frame(height: 30 * getProgress())
+            ScrolledLetterShape()
+            
             , alignment: .top
         )
         //카드 돌돌 말리는 친구끼리 분리
         //offset(y: rect.minY < 0 ? -(rect.minY) : 0)
         .offset(y: rect.minY < (getIndex() * 50) ? -(rect.minY - (getIndex() * 50)) : 0)
         .modifier(OffsetModifier(rect: $rect))
+        
+        .background(
+            Text("no more letters")
+                .font(.title.bold())
+                .foregroundColor(.white)
+                .opacity(isLast() ? 1 : 0)
+                .offset(y: rect.minY < 0 ? -rect.minY : 0)
+        )
         
         //appling bottom padding for last letter to allow scrolling
         .padding(.bottom, isLast() ? rect.height : 0)
@@ -122,4 +129,26 @@ struct LetterCardView: View{
         return (progress > 0 ? (progress < 1 ? progress : 1) : 0)
     }
         
+    @ViewBuilder
+    func ScrolledLetterShape()->some View{
+        Rectangle()
+            .fill(Color.white)
+            .frame(height: 30 * getProgress())
+            .overlay(
+                Rectangle()
+                    .fill(
+                        .linearGradient(.init(colors: [
+                            Color.black.opacity(0.1),
+                            Color.clear,
+                            Color.black.opacity(0.1),
+                            Color.black.opacity(0.05)
+                        ]), startPoint: .top, endPoint: .bottom)
+                    )
+                , alignment: .top
+            )
+            .cornerRadius(6)
+            .shadow(color: Color.black.opacity(0.06), radius: 5, x: 5, y: 5)
+            .shadow(color: Color.black.opacity(0.06), radius: 5, x: -5, y: -5)
+    }
+    
 }
