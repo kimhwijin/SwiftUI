@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Shared
+//  PaperScrollAnimation
 //
 //  Created by 김휘진 on 2021/11/23.
 //

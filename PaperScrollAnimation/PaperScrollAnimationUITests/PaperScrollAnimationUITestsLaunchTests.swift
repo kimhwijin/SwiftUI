@@ -1,13 +1,13 @@
 //
-//  Tests_macOSLaunchTests.swift
-//  Tests macOS
+//  PaperScrollAnimationUITestsLaunchTests.swift
+//  PaperScrollAnimationUITests
 //
 //  Created by 김휘진 on 2021/11/23.
 //
 
 import XCTest
 
-class Tests_macOSLaunchTests: XCTestCase {
+class PaperScrollAnimationUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

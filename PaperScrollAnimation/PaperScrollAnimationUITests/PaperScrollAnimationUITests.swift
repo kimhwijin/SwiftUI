@@ -1,13 +1,13 @@
 //
-//  Tests_iOS.swift
-//  Tests iOS
+//  PaperScrollAnimationUITests.swift
+//  PaperScrollAnimationUITests
 //
 //  Created by 김휘진 on 2021/11/23.
 //
 
 import XCTest
 
-class Tests_iOS: XCTestCase {
+class PaperScrollAnimationUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
