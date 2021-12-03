@@ -62,7 +62,15 @@ struct Home: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
             intro.color
+                .clipShape(LiquidShape())
                 .ignoresSafeArea()
+                .overlay(
+                    Image(systemName: "chevron.left")
+                        .font(.largeTitle)
+                        .offset(y: 80)
+                    ,alignment: .topTrailing
+                )
+                .padding(.trailing)
         )
     }
 }
@@ -75,10 +83,31 @@ extension View{
 }
 
 struct LiquidShape: Shape{
-    var offset: CGSize
+    //var offset: CGSize
     
     func path(in rect: CGRect) -> Path {
         return Path{path in
+            
+            let width: CGFloat = rect.width
+            let height: CGFloat = rect.height
+            //기본적인 사각형 생성 지점
+            path.move(to: CGPoint(x: 0, y: 0))
+            path.addLine(to: CGPoint(x: rect.width, y: 0))
+            path.addLine(to: CGPoint(x: rect.width, y: rect.height))
+            path.addLine(to: CGPoint(x: 0, y: rect.height))
+            
+            //커브 생성
+            //여기서부터 height / 10 에서부터
+            let start: CGFloat = height / 11
+            let end: CGFloat = start * 3
+            let mid: CGFloat = start * 2
+            let widthOffset: CGFloat = width / 5
+            path.move(to: CGPoint(x: width, y: start))
+            //여길 거쳐서
+            path.addCurve(to: CGPoint(x: width, y: end),
+                          control1: CGPoint(x: width - widthOffset / 2, y: mid),
+                          control2: CGPoint(x: width - widthOffset, y: mid)
+            )
             
         }
     }
