@@ -14,6 +14,8 @@
 		FB84E6C7275A54D20034960A /* LiquidSwipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84E6C6275A54D20034960A /* LiquidSwipeTests.swift */; };
 		FB84E6D1275A54D20034960A /* LiquidSwipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84E6D0275A54D20034960A /* LiquidSwipeUITests.swift */; };
 		FB84E6D3275A54D20034960A /* LiquidSwipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84E6D2275A54D20034960A /* LiquidSwipeUITestsLaunchTests.swift */; };
+		FB84E6E2275A57F00034960A /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84E6E1275A57F00034960A /* Intro.swift */; };
+		FB84E6E4275A58670034960A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84E6E3275A58670034960A /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		FB84E6CC275A54D20034960A /* LiquidSwipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidSwipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB84E6D0275A54D20034960A /* LiquidSwipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipeUITests.swift; sourceTree = "<group>"; };
 		FB84E6D2275A54D20034960A /* LiquidSwipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB84E6E1275A57F00034960A /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		FB84E6E3275A58670034960A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		FB84E6B4275A54D10034960A /* LiquidSwipe */ = {
 			isa = PBXGroup;
 			children = (
+				FB84E6E0275A57DD0034960A /* View */,
+				FB84E6DF275A57D40034960A /* Model */,
 				FB84E6B5275A54D10034960A /* LiquidSwipeApp.swift */,
 				FB84E6B7275A54D10034960A /* ContentView.swift */,
 				FB84E6B9275A54D20034960A /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				FB84E6D2275A54D20034960A /* LiquidSwipeUITestsLaunchTests.swift */,
 			);
 			path = LiquidSwipeUITests;
+			sourceTree = "<group>";
+		};
+		FB84E6DF275A57D40034960A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB84E6E1275A57F00034960A /* Intro.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB84E6E0275A57DD0034960A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB84E6E3275A58670034960A /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			files = (
 				FB84E6B8275A54D10034960A /* ContentView.swift in Sources */,
 				FB84E6B6275A54D10034960A /* LiquidSwipeApp.swift in Sources */,
+				FB84E6E4275A58670034960A /* Home.swift in Sources */,
+				FB84E6E2275A57F00034960A /* Intro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
