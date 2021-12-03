@@ -43,6 +43,7 @@ struct feelingEmojiView: View{
                 //직접 애니매이션 뷰의 lottie 이미지 사이즈를 조정 불가능하다...
                 //UIView로 덮어서 사이즈를 조정할 수 있다.
                     //.frame(width: 300, height: 300)
+                
             }
             
             //Slider...

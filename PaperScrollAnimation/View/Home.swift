@@ -69,7 +69,7 @@ struct LetterCardView: View{
             Text("I am running Catalina (10.15) with XCode11. After creating a new project and selecting the option to Use SwiftUI, the file opens, but i get an error  troubleshoot it?\nCreated a new project, and it wa still not allowing a preview. Then I realized that my Documents folder is actually being stored in iCloud Drive. I went back to my root user directory on my local HD and created a new folder in my user folder for the project, and after creating it, it worked without issue.")
                 .lineSpacing(11)
                 .multilineTextAlignment(.leading)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
         }
         .padding()
         .background(
@@ -140,7 +140,7 @@ struct LetterCardView: View{
                         .linearGradient(.init(colors: [
                             Color.black.opacity(0.1),
                             Color.clear,
-                            Color.black.opacity(0.1),
+                            Color.brown.opacity(0.4),
                             Color.black.opacity(0.05)
                         ]), startPoint: .top, endPoint: .bottom)
                     )
