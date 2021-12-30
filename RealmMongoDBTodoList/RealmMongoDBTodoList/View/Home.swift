@@ -8,10 +8,14 @@
 import SwiftUI
 import RealmSwift
 
+
 struct Home: View {
     //모든 Realm Object 데이터를 fetch 함
     //Sorting By Date
     @ObservedResults(TaskItem.self, sortDescriptor: SortDescriptor.init(keyPath: "taskDate", ascending: false)) var tasksFetched
+    
+    //
+    @State var lastAddedTaskID: String = ""
     var body: some View {
         NavigationView {
             
@@ -24,20 +28,40 @@ struct Home: View {
                 else{
                     List{
                         ForEach(tasksFetched){task in
-                            TaskRow(task: task)
+                            TaskRow(task: task, lastAddedTaskID: $lastAddedTaskID)
+                            //Delete Date with Swiping
+                                .swipeActions(edge: .trailing, allowsFullSwipe: true){
+                                    Button(role: .destructive){
+                                        $tasksFetched.remove(task)
+                                    } label: {
+                                        Image(systemName: "trash")
+                                    }
+                                }
+                            
                         }
                     }
                     .listStyle(.insetGrouped)
+                    .animation(.easeInOut, value: tasksFetched)
                 }
             }
-            .navigationTitle("Task's")
+            .navigationTitle("lastAddedTaskID" + lastAddedTaskID)
             .toolbar{
                 Button{
                     //버튼 클릭시 Realm Object 생성
                     let task = TaskItem()
+                    lastAddedTaskID = task.id.stringValue
                     $tasksFetched.append(task)
                 } label: {
                     Image(systemName: "plus")
+                }
+            }
+            .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)) { _ in
+                lastAddedTaskID = ""
+                guard let last = tasksFetched.last else{
+                    return
+                }
+                if last.taskTitle == ""{
+                    $tasksFetched.remove(last)
                 }
             }
         }
@@ -54,13 +78,16 @@ struct TaskRow: View{
     
     @ObservedRealmObject var task: TaskItem
     
+    @Binding var lastAddedTaskID: String
+    //Keyboard focus
+    @FocusState var showKeyboard: Bool
     var body: some View{
         
         //Task Status Indicator Menu
         HStack(spacing: 15){
             Menu{
                 //Update Date
-                Button("Missed"){
+                Button("Missed0"){
                     $task.taskStatus.wrappedValue = .missed
                 }
                 Button("Completed"){
@@ -79,7 +106,8 @@ struct TaskRow: View{
             }
             VStack(alignment: .leading, spacing: 12){
                 
-                TextField("Refresh", text: $task.taskTitle)
+                TextField("asd", text: $task.taskTitle)
+                    .focused($showKeyboard)
                 
                 if task.taskTitle != ""{
                     
@@ -87,6 +115,7 @@ struct TaskRow: View{
                         DatePicker(selection: $task.taskDate, displayedComponents: .date){
                             
                         }
+                        .datePickerStyle(.graphical)
                         .labelsHidden()
                         .navigationTitle("Task Date")
                     } label: {
@@ -97,6 +126,11 @@ struct TaskRow: View{
                     }
                     
                 }
+            }
+        }
+        .onAppear{
+            if lastAddedTaskID == task.id.stringValue{
+                showKeyboard.toggle()
             }
         }
     }
