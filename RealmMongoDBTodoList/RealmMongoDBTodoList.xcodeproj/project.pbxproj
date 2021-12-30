@@ -17,6 +17,7 @@
 		FBBDE3F6277DE2C5004BF80E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FBBDE3F5277DE2C5004BF80E /* Realm */; };
 		FBBDE3F8277DE2C5004BF80E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBBDE3F7277DE2C5004BF80E /* RealmSwift */; };
 		FBBDE3FA277DE32A004BF80E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3F9277DE32A004BF80E /* Home.swift */; };
+		FBBDE3FC277DE475004BF80E /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3FB277DE475004BF80E /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FBBDE3E3277DE28D004BF80E /* RealmMongoDBTodoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMongoDBTodoListUITests.swift; sourceTree = "<group>"; };
 		FBBDE3E5277DE28D004BF80E /* RealmMongoDBTodoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMongoDBTodoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBBDE3F9277DE32A004BF80E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FBBDE3FB277DE475004BF80E /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		FBBDE3F3277DE2A1004BF80E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBBDE3FB277DE475004BF80E /* TaskItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				FBBDE3CB277DE28C004BF80E /* ContentView.swift in Sources */,
 				FBBDE3FA277DE32A004BF80E /* Home.swift in Sources */,
 				FBBDE3C9277DE28C004BF80E /* RealmMongoDBTodoListApp.swift in Sources */,
+				FBBDE3FC277DE475004BF80E /* TaskItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
