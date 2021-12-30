@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBBDE3C9277DE28C004BF80E /* RealmMongoDBTodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3C8277DE28C004BF80E /* RealmMongoDBTodoListApp.swift */; };
+		FBBDE3CB277DE28C004BF80E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3CA277DE28C004BF80E /* ContentView.swift */; };
+		FBBDE3CD277DE28C004BF80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBDE3CC277DE28C004BF80E /* Assets.xcassets */; };
+		FBBDE3D0277DE28C004BF80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBDE3CF277DE28C004BF80E /* Preview Assets.xcassets */; };
+		FBBDE3DA277DE28D004BF80E /* RealmMongoDBTodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3D9277DE28D004BF80E /* RealmMongoDBTodoListTests.swift */; };
+		FBBDE3E4277DE28D004BF80E /* RealmMongoDBTodoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3E3277DE28D004BF80E /* RealmMongoDBTodoListUITests.swift */; };
+		FBBDE3E6277DE28D004BF80E /* RealmMongoDBTodoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3E5277DE28D004BF80E /* RealmMongoDBTodoListUITestsLaunchTests.swift */; };
+		FBBDE3F6277DE2C5004BF80E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FBBDE3F5277DE2C5004BF80E /* Realm */; };
+		FBBDE3F8277DE2C5004BF80E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBBDE3F7277DE2C5004BF80E /* RealmSwift */; };
+		FBBDE3FA277DE32A004BF80E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDE3F9277DE32A004BF80E /* Home.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBBDE3D6277DE28D004BF80E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBBDE3BD277DE28C004BF80E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBDE3C4277DE28C004BF80E;
+			remoteInfo = RealmMongoDBTodoList;
+		};
+		FBBDE3E0277DE28D004BF80E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBBDE3BD277DE28C004BF80E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBDE3C4277DE28C004BF80E;
+			remoteInfo = RealmMongoDBTodoList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBBDE3C5277DE28C004BF80E /* RealmMongoDBTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmMongoDBTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBDE3C8277DE28C004BF80E /* RealmMongoDBTodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMongoDBTodoListApp.swift; sourceTree = "<group>"; };
+		FBBDE3CA277DE28C004BF80E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBBDE3CC277DE28C004BF80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBDE3CF277DE28C004BF80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBBDE3D5277DE28D004BF80E /* RealmMongoDBTodoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmMongoDBTodoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBDE3D9277DE28D004BF80E /* RealmMongoDBTodoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMongoDBTodoListTests.swift; sourceTree = "<group>"; };
+		FBBDE3DF277DE28D004BF80E /* RealmMongoDBTodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmMongoDBTodoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBDE3E3277DE28D004BF80E /* RealmMongoDBTodoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMongoDBTodoListUITests.swift; sourceTree = "<group>"; };
+		FBBDE3E5277DE28D004BF80E /* RealmMongoDBTodoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMongoDBTodoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBBDE3F9277DE32A004BF80E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBBDE3C2277DE28C004BF80E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBDE3F8277DE2C5004BF80E /* RealmSwift in Frameworks */,
+				FBBDE3F6277DE2C5004BF80E /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBDE3D2277DE28D004BF80E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBDE3DC277DE28D004BF80E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBBDE3BC277DE28C004BF80E = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3C7277DE28C004BF80E /* RealmMongoDBTodoList */,
+				FBBDE3D8277DE28D004BF80E /* RealmMongoDBTodoListTests */,
+				FBBDE3E2277DE28D004BF80E /* RealmMongoDBTodoListUITests */,
+				FBBDE3C6277DE28C004BF80E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBBDE3C6277DE28C004BF80E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3C5277DE28C004BF80E /* RealmMongoDBTodoList.app */,
+				FBBDE3D5277DE28D004BF80E /* RealmMongoDBTodoListTests.xctest */,
+				FBBDE3DF277DE28D004BF80E /* RealmMongoDBTodoListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBBDE3C7277DE28C004BF80E /* RealmMongoDBTodoList */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3F3277DE2A1004BF80E /* Model */,
+				FBBDE3F2277DE29C004BF80E /* View */,
+				FBBDE3C8277DE28C004BF80E /* RealmMongoDBTodoListApp.swift */,
+				FBBDE3CA277DE28C004BF80E /* ContentView.swift */,
+				FBBDE3CC277DE28C004BF80E /* Assets.xcassets */,
+				FBBDE3CE277DE28C004BF80E /* Preview Content */,
+			);
+			path = RealmMongoDBTodoList;
+			sourceTree = "<group>";
+		};
+		FBBDE3CE277DE28C004BF80E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3CF277DE28C004BF80E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBBDE3D8277DE28D004BF80E /* RealmMongoDBTodoListTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3D9277DE28D004BF80E /* RealmMongoDBTodoListTests.swift */,
+			);
+			path = RealmMongoDBTodoListTests;
+			sourceTree = "<group>";
+		};
+		FBBDE3E2277DE28D004BF80E /* RealmMongoDBTodoListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3E3277DE28D004BF80E /* RealmMongoDBTodoListUITests.swift */,
+				FBBDE3E5277DE28D004BF80E /* RealmMongoDBTodoListUITestsLaunchTests.swift */,
+			);
+			path = RealmMongoDBTodoListUITests;
+			sourceTree = "<group>";
+		};
+		FBBDE3F2277DE29C004BF80E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDE3F9277DE32A004BF80E /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBBDE3F3277DE2A1004BF80E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBBDE3C4277DE28C004BF80E /* RealmMongoDBTodoList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBDE3E9277DE28D004BF80E /* Build configuration list for PBXNativeTarget "RealmMongoDBTodoList" */;
+			buildPhases = (
+				FBBDE3C1277DE28C004BF80E /* Sources */,
+				FBBDE3C2277DE28C004BF80E /* Frameworks */,
+				FBBDE3C3277DE28C004BF80E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmMongoDBTodoList;
+			packageProductDependencies = (
+				FBBDE3F5277DE2C5004BF80E /* Realm */,
+				FBBDE3F7277DE2C5004BF80E /* RealmSwift */,
+			);
+			productName = RealmMongoDBTodoList;
+			productReference = FBBDE3C5277DE28C004BF80E /* RealmMongoDBTodoList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBBDE3D4277DE28D004BF80E /* RealmMongoDBTodoListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBDE3EC277DE28D004BF80E /* Build configuration list for PBXNativeTarget "RealmMongoDBTodoListTests" */;
+			buildPhases = (
+				FBBDE3D1277DE28D004BF80E /* Sources */,
+				FBBDE3D2277DE28D004BF80E /* Frameworks */,
+				FBBDE3D3277DE28D004BF80E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBBDE3D7277DE28D004BF80E /* PBXTargetDependency */,
+			);
+			name = RealmMongoDBTodoListTests;
+			productName = RealmMongoDBTodoListTests;
+			productReference = FBBDE3D5277DE28D004BF80E /* RealmMongoDBTodoListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBBDE3DE277DE28D004BF80E /* RealmMongoDBTodoListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBDE3EF277DE28D004BF80E /* Build configuration list for PBXNativeTarget "RealmMongoDBTodoListUITests" */;
+			buildPhases = (
+				FBBDE3DB277DE28D004BF80E /* Sources */,
+				FBBDE3DC277DE28D004BF80E /* Frameworks */,
+				FBBDE3DD277DE28D004BF80E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBBDE3E1277DE28D004BF80E /* PBXTargetDependency */,
+			);
+			name = RealmMongoDBTodoListUITests;
+			productName = RealmMongoDBTodoListUITests;
+			productReference = FBBDE3DF277DE28D004BF80E /* RealmMongoDBTodoListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBBDE3BD277DE28C004BF80E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FBBDE3C4277DE28C004BF80E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FBBDE3D4277DE28D004BF80E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FBBDE3C4277DE28C004BF80E;
+					};
+					FBBDE3DE277DE28D004BF80E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FBBDE3C4277DE28C004BF80E;
+					};
+				};
+			};
+			buildConfigurationList = FBBDE3C0277DE28C004BF80E /* Build configuration list for PBXProject "RealmMongoDBTodoList" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBBDE3BC277DE28C004BF80E;
+			packageReferences = (
+				FBBDE3F4277DE2C5004BF80E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = FBBDE3C6277DE28C004BF80E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBBDE3C4277DE28C004BF80E /* RealmMongoDBTodoList */,
+				FBBDE3D4277DE28D004BF80E /* RealmMongoDBTodoListTests */,
+				FBBDE3DE277DE28D004BF80E /* RealmMongoDBTodoListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBBDE3C3277DE28C004BF80E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBDE3D0277DE28C004BF80E /* Preview Assets.xcassets in Resources */,
+				FBBDE3CD277DE28C004BF80E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBDE3D3277DE28D004BF80E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBDE3DD277DE28D004BF80E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBBDE3C1277DE28C004BF80E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBDE3CB277DE28C004BF80E /* ContentView.swift in Sources */,
+				FBBDE3FA277DE32A004BF80E /* Home.swift in Sources */,
+				FBBDE3C9277DE28C004BF80E /* RealmMongoDBTodoListApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBDE3D1277DE28D004BF80E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBDE3DA277DE28D004BF80E /* RealmMongoDBTodoListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBDE3DB277DE28D004BF80E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBDE3E4277DE28D004BF80E /* RealmMongoDBTodoListUITests.swift in Sources */,
+				FBBDE3E6277DE28D004BF80E /* RealmMongoDBTodoListUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBBDE3D7277DE28D004BF80E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBBDE3C4277DE28C004BF80E /* RealmMongoDBTodoList */;
+			targetProxy = FBBDE3D6277DE28D004BF80E /* PBXContainerItemProxy */;
+		};
+		FBBDE3E1277DE28D004BF80E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBBDE3C4277DE28C004BF80E /* RealmMongoDBTodoList */;
+			targetProxy = FBBDE3E0277DE28D004BF80E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBBDE3E7277DE28D004BF80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBBDE3E8277DE28D004BF80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBBDE3EA277DE28D004BF80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealmMongoDBTodoList/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.RealmMongoDBTodoList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBBDE3EB277DE28D004BF80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RealmMongoDBTodoList/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.RealmMongoDBTodoList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBBDE3ED277DE28D004BF80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.RealmMongoDBTodoListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealmMongoDBTodoList.app/RealmMongoDBTodoList";
+			};
+			name = Debug;
+		};
+		FBBDE3EE277DE28D004BF80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.RealmMongoDBTodoListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealmMongoDBTodoList.app/RealmMongoDBTodoList";
+			};
+			name = Release;
+		};
+		FBBDE3F0277DE28D004BF80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.RealmMongoDBTodoListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealmMongoDBTodoList;
+			};
+			name = Debug;
+		};
+		FBBDE3F1277DE28D004BF80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwijin.RealmMongoDBTodoListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealmMongoDBTodoList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBBDE3C0277DE28C004BF80E /* Build configuration list for PBXProject "RealmMongoDBTodoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBDE3E7277DE28D004BF80E /* Debug */,
+				FBBDE3E8277DE28D004BF80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBDE3E9277DE28D004BF80E /* Build configuration list for PBXNativeTarget "RealmMongoDBTodoList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBDE3EA277DE28D004BF80E /* Debug */,
+				FBBDE3EB277DE28D004BF80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBDE3EC277DE28D004BF80E /* Build configuration list for PBXNativeTarget "RealmMongoDBTodoListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBDE3ED277DE28D004BF80E /* Debug */,
+				FBBDE3EE277DE28D004BF80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBDE3EF277DE28D004BF80E /* Build configuration list for PBXNativeTarget "RealmMongoDBTodoListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBDE3F0277DE28D004BF80E /* Debug */,
+				FBBDE3F1277DE28D004BF80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBBDE3F4277DE2C5004BF80E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBBDE3F5277DE2C5004BF80E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBBDE3F4277DE2C5004BF80E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		FBBDE3F7277DE2C5004BF80E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBBDE3F4277DE2C5004BF80E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBBDE3BD277DE28C004BF80E /* Project object */;
+}
