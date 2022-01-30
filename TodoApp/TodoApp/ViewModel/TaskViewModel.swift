@@ -11,14 +11,14 @@ class TaskViewModel: ObservableObject{
     
     @Published var storedTasks: [Task] = [
 
-        Task(taskTitle: "Meeting", taskDescription: "Discuss team task for the day", taskDate: .init(timeIntervalSinceNow: 100)),
-        Task(taskTitle: "Icon set", taskDescription: "Edit icons for team task for next week", taskDate: .init(timeIntervalSinceNow: 1000)),
+        Task(taskTitle: "Meeting", taskDescription: "Discuss team task for the day", taskDate: .init(timeIntervalSinceNow: -5000)),
+        Task(taskTitle: "Icon set", taskDescription: "Edit icons for team task for next week", taskDate: .init(timeIntervalSinceNow: 10000)),
         Task(taskTitle: "Prototype", taskDescription: "Make and send prototype", taskDate: .init(timeIntervalSinceNow: 0)),
         Task(taskTitle: "Check asset", taskDescription: "Start checking the assets", taskDate: .init(timeIntervalSinceNow: 1000)),
         Task(taskTitle: "Team party", taskDescription: "Make fun with team mates", taskDate: .init(timeIntervalSinceNow: 1000)),
         Task(taskTitle: "Client Meeting", taskDescription: "Explain project to clinet", taskDate: .init(timeIntervalSinceNow: 10)),
         
-        Task(taskTitle: "Next Project", taskDescription: "Discuss next project with team", taskDate: .init(timeIntervalSinceNow: 1000)),
+        Task(taskTitle: "Next Project", taskDescription: "Discuss next project with team", taskDate: .init(timeIntervalSinceNow: 5000)),
         Task(taskTitle: "App Proposal", taskDescription: "Meet client for next App Proposal", taskDate: .init(timeIntervalSinceNow: 1000)),
     ]
     
@@ -46,6 +46,9 @@ class TaskViewModel: ObservableObject{
             let filtered = self.storedTasks.filter{
                 return calender.isDate($0.taskDate, inSameDayAs: self.currentDay)
             }
+                .sorted { task1, task2 in
+                    return task2.taskDate > task1.taskDate
+                }
             
             DispatchQueue.main.async {
                 withAnimation{

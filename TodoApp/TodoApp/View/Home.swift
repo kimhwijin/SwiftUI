@@ -70,7 +70,7 @@ struct Home: View {
     
     //task view
     func TasksView()->some View{
-        LazyVStack(spacing: 18){
+        LazyVStack(spacing: 25){
             if let tasks = taskModel.filteredTasks{
                 if tasks.isEmpty{
                     Text("No task found!!!")
@@ -96,18 +96,19 @@ struct Home: View {
         HStack{
             VStack(spacing: 10){
                 Circle()
-                    .fill(.black)
+                    .fill(taskModel.isCurrentHour(date: task.taskDate) ? .black : .clear)
                     .frame(width:15, height:15)
                     .background(
                         Circle()
                             .stroke(.black, lineWidth: 1)
                             .padding(-3)
                     )
+                    .scaleEffect(!taskModel.isCurrentHour(date: task.taskDate) ? 0.8 : 1)
                 Rectangle()
                     .fill(.black)
                     .frame(width: 3)
             }
-            .padding(.leading, 5)
+            .padding(.horizontal, 10)
             
             VStack{
                 
@@ -146,12 +147,14 @@ struct Home: View {
                     
                 }
             }
-            .foregroundColor(.white)
-            .padding()
+            .foregroundColor(taskModel.isCurrentHour(date: task.taskDate) ? .white : .black)
+            .padding(taskModel.isCurrentHour(date: task.taskDate) ? 15 : 0)
+            .padding(.bottom, taskModel.isCurrentHour(date: task.taskDate) ? 0 : 10)
             .hLeading()
             .background(
                 Color("Black")
                     .cornerRadius(25)
+                    .opacity(taskModel.isCurrentHour(date: task.taskDate) ? 1 : 0)
             )
         }
         .hLeading()
