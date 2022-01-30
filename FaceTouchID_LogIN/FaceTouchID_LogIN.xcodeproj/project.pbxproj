@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB37293827A6C3270007D24D /* FaceTouchID_LogINApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37293727A6C3270007D24D /* FaceTouchID_LogINApp.swift */; };
+		FB37293A27A6C3270007D24D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37293927A6C3270007D24D /* ContentView.swift */; };
+		FB37293C27A6C3280007D24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB37293B27A6C3280007D24D /* Assets.xcassets */; };
+		FB37293F27A6C3280007D24D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB37293E27A6C3280007D24D /* Preview Assets.xcassets */; };
+		FB37294927A6C3280007D24D /* FaceTouchID_LogINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37294827A6C3280007D24D /* FaceTouchID_LogINTests.swift */; };
+		FB37295327A6C3280007D24D /* FaceTouchID_LogINUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37295227A6C3280007D24D /* FaceTouchID_LogINUITests.swift */; };
+		FB37295527A6C3280007D24D /* FaceTouchID_LogINUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37295427A6C3280007D24D /* FaceTouchID_LogINUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB37294527A6C3280007D24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB37292C27A6C3270007D24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB37293327A6C3270007D24D;
+			remoteInfo = FaceTouchID_LogIN;
+		};
+		FB37294F27A6C3280007D24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB37292C27A6C3270007D24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB37293327A6C3270007D24D;
+			remoteInfo = FaceTouchID_LogIN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB37293427A6C3270007D24D /* FaceTouchID_LogIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceTouchID_LogIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB37293727A6C3270007D24D /* FaceTouchID_LogINApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTouchID_LogINApp.swift; sourceTree = "<group>"; };
+		FB37293927A6C3270007D24D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB37293B27A6C3280007D24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB37293E27A6C3280007D24D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB37294427A6C3280007D24D /* FaceTouchID_LogINTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceTouchID_LogINTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB37294827A6C3280007D24D /* FaceTouchID_LogINTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTouchID_LogINTests.swift; sourceTree = "<group>"; };
+		FB37294E27A6C3280007D24D /* FaceTouchID_LogINUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceTouchID_LogINUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB37295227A6C3280007D24D /* FaceTouchID_LogINUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTouchID_LogINUITests.swift; sourceTree = "<group>"; };
+		FB37295427A6C3280007D24D /* FaceTouchID_LogINUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTouchID_LogINUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB37293127A6C3270007D24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB37294127A6C3280007D24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB37294B27A6C3280007D24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB37292B27A6C3270007D24D = {
+			isa = PBXGroup;
+			children = (
+				FB37293627A6C3270007D24D /* FaceTouchID_LogIN */,
+				FB37294727A6C3280007D24D /* FaceTouchID_LogINTests */,
+				FB37295127A6C3280007D24D /* FaceTouchID_LogINUITests */,
+				FB37293527A6C3270007D24D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB37293527A6C3270007D24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB37293427A6C3270007D24D /* FaceTouchID_LogIN.app */,
+				FB37294427A6C3280007D24D /* FaceTouchID_LogINTests.xctest */,
+				FB37294E27A6C3280007D24D /* FaceTouchID_LogINUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB37293627A6C3270007D24D /* FaceTouchID_LogIN */ = {
+			isa = PBXGroup;
+			children = (
+				FB37293727A6C3270007D24D /* FaceTouchID_LogINApp.swift */,
+				FB37293927A6C3270007D24D /* ContentView.swift */,
+				FB37293B27A6C3280007D24D /* Assets.xcassets */,
+				FB37293D27A6C3280007D24D /* Preview Content */,
+			);
+			path = FaceTouchID_LogIN;
+			sourceTree = "<group>";
+		};
+		FB37293D27A6C3280007D24D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB37293E27A6C3280007D24D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB37294727A6C3280007D24D /* FaceTouchID_LogINTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB37294827A6C3280007D24D /* FaceTouchID_LogINTests.swift */,
+			);
+			path = FaceTouchID_LogINTests;
+			sourceTree = "<group>";
+		};
+		FB37295127A6C3280007D24D /* FaceTouchID_LogINUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB37295227A6C3280007D24D /* FaceTouchID_LogINUITests.swift */,
+				FB37295427A6C3280007D24D /* FaceTouchID_LogINUITestsLaunchTests.swift */,
+			);
+			path = FaceTouchID_LogINUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB37293327A6C3270007D24D /* FaceTouchID_LogIN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB37295827A6C3280007D24D /* Build configuration list for PBXNativeTarget "FaceTouchID_LogIN" */;
+			buildPhases = (
+				FB37293027A6C3270007D24D /* Sources */,
+				FB37293127A6C3270007D24D /* Frameworks */,
+				FB37293227A6C3270007D24D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceTouchID_LogIN;
+			productName = FaceTouchID_LogIN;
+			productReference = FB37293427A6C3270007D24D /* FaceTouchID_LogIN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB37294327A6C3280007D24D /* FaceTouchID_LogINTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB37295B27A6C3280007D24D /* Build configuration list for PBXNativeTarget "FaceTouchID_LogINTests" */;
+			buildPhases = (
+				FB37294027A6C3280007D24D /* Sources */,
+				FB37294127A6C3280007D24D /* Frameworks */,
+				FB37294227A6C3280007D24D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB37294627A6C3280007D24D /* PBXTargetDependency */,
+			);
+			name = FaceTouchID_LogINTests;
+			productName = FaceTouchID_LogINTests;
+			productReference = FB37294427A6C3280007D24D /* FaceTouchID_LogINTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB37294D27A6C3280007D24D /* FaceTouchID_LogINUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB37295E27A6C3280007D24D /* Build configuration list for PBXNativeTarget "FaceTouchID_LogINUITests" */;
+			buildPhases = (
+				FB37294A27A6C3280007D24D /* Sources */,
+				FB37294B27A6C3280007D24D /* Frameworks */,
+				FB37294C27A6C3280007D24D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB37295027A6C3280007D24D /* PBXTargetDependency */,
+			);
+			name = FaceTouchID_LogINUITests;
+			productName = FaceTouchID_LogINUITests;
+			productReference = FB37294E27A6C3280007D24D /* FaceTouchID_LogINUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB37292C27A6C3270007D24D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FB37293327A6C3270007D24D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FB37294327A6C3280007D24D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FB37293327A6C3270007D24D;
+					};
+					FB37294D27A6C3280007D24D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FB37293327A6C3270007D24D;
+					};
+				};
+			};
+			buildConfigurationList = FB37292F27A6C3270007D24D /* Build configuration list for PBXProject "FaceTouchID_LogIN" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB37292B27A6C3270007D24D;
+			productRefGroup = FB37293527A6C3270007D24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB37293327A6C3270007D24D /* FaceTouchID_LogIN */,
+				FB37294327A6C3280007D24D /* FaceTouchID_LogINTests */,
+				FB37294D27A6C3280007D24D /* FaceTouchID_LogINUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB37293227A6C3270007D24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB37293F27A6C3280007D24D /* Preview Assets.xcassets in Resources */,
+				FB37293C27A6C3280007D24D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB37294227A6C3280007D24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB37294C27A6C3280007D24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB37293027A6C3270007D24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB37293A27A6C3270007D24D /* ContentView.swift in Sources */,
+				FB37293827A6C3270007D24D /* FaceTouchID_LogINApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB37294027A6C3280007D24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB37294927A6C3280007D24D /* FaceTouchID_LogINTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB37294A27A6C3280007D24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB37295527A6C3280007D24D /* FaceTouchID_LogINUITestsLaunchTests.swift in Sources */,
+				FB37295327A6C3280007D24D /* FaceTouchID_LogINUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB37294627A6C3280007D24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB37293327A6C3270007D24D /* FaceTouchID_LogIN */;
+			targetProxy = FB37294527A6C3280007D24D /* PBXContainerItemProxy */;
+		};
+		FB37295027A6C3280007D24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB37293327A6C3270007D24D /* FaceTouchID_LogIN */;
+			targetProxy = FB37294F27A6C3280007D24D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB37295627A6C3280007D24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB37295727A6C3280007D24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB37295927A6C3280007D24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FaceTouchID_LogIN/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.FaceTouchID-LogIN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB37295A27A6C3280007D24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FaceTouchID_LogIN/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.FaceTouchID-LogIN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB37295C27A6C3280007D24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.FaceTouchID-LogINTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceTouchID_LogIN.app/FaceTouchID_LogIN";
+			};
+			name = Debug;
+		};
+		FB37295D27A6C3280007D24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.FaceTouchID-LogINTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceTouchID_LogIN.app/FaceTouchID_LogIN";
+			};
+			name = Release;
+		};
+		FB37295F27A6C3280007D24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.FaceTouchID-LogINUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FaceTouchID_LogIN;
+			};
+			name = Debug;
+		};
+		FB37296027A6C3280007D24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hwijin.FaceTouchID-LogINUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FaceTouchID_LogIN;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB37292F27A6C3270007D24D /* Build configuration list for PBXProject "FaceTouchID_LogIN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB37295627A6C3280007D24D /* Debug */,
+				FB37295727A6C3280007D24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB37295827A6C3280007D24D /* Build configuration list for PBXNativeTarget "FaceTouchID_LogIN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB37295927A6C3280007D24D /* Debug */,
+				FB37295A27A6C3280007D24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB37295B27A6C3280007D24D /* Build configuration list for PBXNativeTarget "FaceTouchID_LogINTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB37295C27A6C3280007D24D /* Debug */,
+				FB37295D27A6C3280007D24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB37295E27A6C3280007D24D /* Build configuration list for PBXNativeTarget "FaceTouchID_LogINUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB37295F27A6C3280007D24D /* Debug */,
+				FB37296027A6C3280007D24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB37292C27A6C3270007D24D /* Project object */;
+}
