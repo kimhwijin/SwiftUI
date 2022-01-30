@@ -58,18 +58,18 @@ struct Home: View {
                         .padding(.horizontal)
                     }
                     
-                    TaskView()
+                    TasksView()
                     
                 } header: {
                     HeaderView()
                 }
-            
             }
         }
+        .ignoresSafeArea(.container, edges: .top)
     }
     
     //task view
-    func TaskView()->some View{
+    func TasksView()->some View{
         LazyVStack(spacing: 18){
             if let tasks = taskModel.filteredTasks{
                 if tasks.isEmpty{
@@ -110,23 +110,43 @@ struct Home: View {
             .padding(.leading, 5)
             
             VStack{
+                
                 HStack(alignment: .top, spacing: 10){
                     VStack(alignment: .leading, spacing: 12){
                         Text(task.taskTitle)
                             .font(.title2.bold())
-                            .foregroundColor(.white)
                         Text(task.taskDescription)
                             .font(.callout)
-                            .foregroundColor(.gray)
                             .foregroundStyle(.secondary)
                         
                     }
-                    
-                    Text(task.taskDate.formatted(date: .omitted, time: .shortened))
-                        .foregroundColor(.white)
+                    if taskModel.isCurrentHour(date: task.taskDate){
+                        VStack(alignment: .trailing, spacing: 30){
+                            Text(task.taskDate.formatted(date: .omitted, time: .shortened))
+                                .foregroundColor(.white)
+                            
+                            HStack(spacing: -10){
+                                ForEach(["User1", "User2", "User3"], id: \.self){user in
+                                    Image(user)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 30, height: 30)
+                                        .clipShape(Circle())
+                                        .background(
+                                            Circle()
+                                                .stroke(.white, lineWidth: 1)
+                                        )
+                                }
+                            }
+                            .hTrailing()
+                        }
+                    }
+                }
+                .onTapGesture{
                     
                 }
             }
+            .foregroundColor(.white)
             .padding()
             .hLeading()
             .background(
@@ -162,6 +182,7 @@ struct Home: View {
             
         }
         .padding()
+        .padding(.top, 40)
         .background(Color.white)
     }
 }
@@ -185,5 +206,16 @@ extension View{
     func hCenter()->some View{
         self
             .frame(maxWidth: .infinity, alignment: .center)
+    }
+    
+    func getSafeArea()->UIEdgeInsets{
+        guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else{
+            return .zero
+        }
+        
+        guard let safeArea = screen.windows.first?.safeAreaInsets else{
+            return .zero
+        }
+        return safeArea
     }
 }
