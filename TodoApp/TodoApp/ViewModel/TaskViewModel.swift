@@ -21,5 +21,31 @@ class TaskViewModel: ObservableObject{
         Task(taskTitle: "Next Project", taskDescription: "Discuss next project with team", taskDate: .init(timeIntervalSince1970: 1641677897)),
         Task(taskTitle: "App Proposal", taskDescription: "Meet client for next App Proposal", taskDate: .init(timeIntervalSince1970: 1641681497)),
     ]
+    
+    // Current Week Days
+    @Published var currentWeek: [Date] = []
+    
+    //initalizing
+    init(){
+        fetchCurrentWeek()
+    }
+    
+    //
+    func fetchCurrentWeek() {
+        let today = Date()
+        let calendear = Calendar.current
+        
+        let week = calendear.dateInterval(of: .weekOfMonth, for: today)
+        
+        guard let firstWeekDay = week?.start else {
+            return
+        }
+        
+        (1...7).forEach { day in
+            if let weekday = calendear.date(byAdding: .day, value: day, to: firstWeekDay){
+                currentWeek.append(weekday)
+            }
+        }
+    }
 }
 
