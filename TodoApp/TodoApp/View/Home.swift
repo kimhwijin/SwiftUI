@@ -27,6 +27,10 @@ struct Home: View {
                                     Text(taskModel.extractDate(date: day, format: "EEE"))
                                         .font(.system(size: 14))
                                         .fontWeight(.semibold)
+                                    Circle()
+                                        .fill(.white)
+                                        .frame(width:8, height:8)
+                                        .opacity(taskModel.isToday(date: day) ? 1 : 0)
                                 }
                                 .foregroundColor(.white)
                                 .frame(width:45, height:90)
