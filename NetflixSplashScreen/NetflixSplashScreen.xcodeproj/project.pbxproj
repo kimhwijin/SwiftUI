@@ -17,6 +17,7 @@
 		FB78398427B16D2A009D2A98 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB78398327B16D2A009D2A98 /* logo.gif */; };
 		FB78398727B16DA5009D2A98 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78398627B16DA5009D2A98 /* SplashScreen.swift */; };
 		FB78398A27B16E68009D2A98 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FB78398927B16E68009D2A98 /* SDWebImageSwiftUI */; };
+		FB78398D27B173E3009D2A98 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB78398C27B173E3009D2A98 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		FB78397627B16CF9009D2A98 /* NetflixSplashScreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixSplashScreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB78398327B16D2A009D2A98 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		FB78398627B16DA5009D2A98 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		FB78398B27B171AE009D2A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB78398C27B173E3009D2A98 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 		FB78395827B16CF8009D2A98 /* NetflixSplashScreen */ = {
 			isa = PBXGroup;
 			children = (
+				FB78398B27B171AE009D2A98 /* Info.plist */,
 				FB78398527B16D83009D2A98 /* View */,
 				FB78398327B16D2A009D2A98 /* logo.gif */,
 				FB78395927B16CF8009D2A98 /* NetflixSplashScreenApp.swift */,
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FB78398627B16DA5009D2A98 /* SplashScreen.swift */,
+				FB78398C27B173E3009D2A98 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			files = (
 				FB78398727B16DA5009D2A98 /* SplashScreen.swift in Sources */,
 				FB78395C27B16CF8009D2A98 /* ContentView.swift in Sources */,
+				FB78398D27B173E3009D2A98 /* Home.swift in Sources */,
 				FB78395A27B16CF8009D2A98 /* NetflixSplashScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,11 +449,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NetflixSplashScreen/Preview Content\"";
+				DEVELOPMENT_TEAM = BTT9GSQY87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetflixSplashScreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,11 +478,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NetflixSplashScreen/Preview Content\"";
+				DEVELOPMENT_TEAM = BTT9GSQY87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetflixSplashScreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
