@@ -1,4 +1,4 @@
-//
+ //
 //  Home.swift
 //  TaskManagement (iOS)
 //
@@ -78,6 +78,18 @@ struct Home: View {
             }
         }
         .ignoresSafeArea(.container, edges: .top)
+        .overlay(
+            Button(action: {
+                
+            }, label: {
+                Image(systemName: "plus")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.black, in: Circle())
+            })
+            .padding()
+            , alignment: .bottomTrailing
+        )
     }
     
     // MARK: Tasks View
@@ -85,27 +97,9 @@ struct Home: View {
         
         LazyVStack(spacing: 20){
             
-            if let tasks = taskModel.filteredTasks{
-                
-                if tasks.isEmpty{
-                    
-                    Text("No tasks found!!!")
-                        .font(.system(size: 16))
-                        .fontWeight(.light)
-                        .offset(y: 100)
-                }
-                else{
-                    
-                    ForEach(tasks){task in
-                        TaskCardView(task: task)
-                    }
-                }
-            }
-            else{
-                // MARK: Progress View
-                ProgressView()
-                    .offset(y: 100)
-            }
+//            DynamicFilteredView(dateToFilter: taskModel.currentDay) { (object: Task) in
+//                TaskCardView(task: object)
+//            }
         }
         .padding()
         .padding(.top)
@@ -119,7 +113,7 @@ struct Home: View {
                 Circle()
                     .fill(taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? .black : .clear)
                     .frame(width: 15, height: 15)
-                    .background(
+                    .background( 
                     
                         Circle()
                             .stroke(.black,lineWidth: 1)
