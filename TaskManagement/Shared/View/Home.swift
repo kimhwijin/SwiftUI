@@ -80,7 +80,7 @@ struct Home: View {
         .ignoresSafeArea(.container, edges: .top)
         .overlay(
             Button(action: {
-                
+                taskModel.addNewView.toggle()
             }, label: {
                 Image(systemName: "plus")
                     .foregroundColor(.white)
@@ -90,17 +90,20 @@ struct Home: View {
             .padding()
             , alignment: .bottomTrailing
         )
+        .sheet(isPresented: $taskModel.addNewView){
+            NewTask()
+        }
     }
     
     // MARK: Tasks View
     func TasksView()->some View{
         
         LazyVStack(spacing: 20){
-            
-//            DynamicFilteredView(dateToFilter: taskModel.currentDay) { (object: Task) in
-//                TaskCardView(task: object)
-//            }
+            DynamicFilteredView(dateTofilter: taskModel.currentDay){ (object: Task) in
+                TaskCardView(task: object)
+            }
         }
+        
         .padding()
         .padding(.top)
     }
@@ -113,7 +116,7 @@ struct Home: View {
                 Circle()
                     .fill(taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? .black : .clear)
                     .frame(width: 15, height: 15)
-                    .background( 
+                    .background(  
                     
                         Circle()
                             .stroke(.black,lineWidth: 1)

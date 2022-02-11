@@ -18,6 +18,8 @@ class TaskViewModel: ObservableObject{
     // MARK: Filtering Today Tasks
     @Published var filteredTasks: [Task]?
     
+    @Published var addNewView: Bool = false
+    
     // MARK: Intializing
     init(){
         fetchCurrentWeek()
