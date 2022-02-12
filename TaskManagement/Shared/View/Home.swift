@@ -128,7 +128,8 @@ struct Home: View {
                 
                 VStack(spacing: 10){
                     
-                    if task.taskDate?.compare(Date()) == .orderedDescending || taskModel.isToday(date: task.taskDate ?? Date()) {
+                    //과거 task 는 편집불가능
+                    if task.taskDate?.compare(Date()) == .orderedDescending || Calendar.current.isDateInToday(task.taskDate ?? Date()) {
                         Button {
                             taskModel.editTask = task
                             taskModel.addNewView.toggle()
