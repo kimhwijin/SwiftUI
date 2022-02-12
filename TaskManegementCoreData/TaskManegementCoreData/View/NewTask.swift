@@ -16,6 +16,8 @@ struct NewTask: View {
     @State var taskDate: Date = Date()
     
     @Environment(\.managedObjectContext) var context
+    
+    @EnvironmentObject var taskModel: TaskViewModel
     var body: some View {
         
         NavigationView{
@@ -32,12 +34,14 @@ struct NewTask: View {
                     Text("Task Description")
                 }
                 
-                Section {
-                    DatePicker("", selection: $taskDate)
-                        .datePickerStyle(.graphical)
-                        .labelsHidden()
-                } header: {
-                    Text("Task Date")
+                if taskModel.editTask == nil{
+                    Section {
+                        DatePicker("", selection: $taskDate)
+                            .datePickerStyle(.graphical)
+                            .labelsHidden()
+                    } header: {
+                        Text("Task Date")
+                    }
                 }
             }
             .listStyle(.insetGrouped)
@@ -49,10 +53,17 @@ struct NewTask: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button("Save"){
-                        let task = Task(context: context)
-                        task.taskTitle = taskTitle
-                        task.taskDescription = taskDescription
-                        task.taskDate = taskDate
+                        
+                        if let task = taskModel.editTask {
+                            task.taskTitle = taskTitle
+                            task.taskDescription = taskDescription
+                        }
+                        else {
+                            let task = Task(context: context)
+                            task.taskTitle = taskTitle
+                            task.taskDescription = taskDescription
+                            task.taskDate = taskDate
+                        }
                         
                         try? context.save()
                         dismiss()
@@ -66,6 +77,12 @@ struct NewTask: View {
                         dismiss()
                     }
                 }
+            }
+        }
+        .onAppear {
+            if let task = taskModel.editTask {
+                taskTitle = task.taskTitle ?? ""
+                taskDescription = task.taskDescription ?? ""
             }
         }
     }

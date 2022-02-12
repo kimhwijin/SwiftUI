@@ -20,6 +20,8 @@ class TaskViewModel: ObservableObject{
     
     @Published var addNewView: Bool = false
     
+    @Published var editTask: Task?
+    
     // MARK: Intializing
     init(){
         fetchCurrentWeek()
@@ -36,7 +38,7 @@ class TaskViewModel: ObservableObject{
             return
         }
         
-        (0..<7).forEach { day in
+        (0..<11).forEach { day in
             
             if let weekday = calendar.date(byAdding: .day, value: day, to: firstWeekDay){
                 currentWeek.append(weekday)

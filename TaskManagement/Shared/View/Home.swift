@@ -11,6 +11,11 @@ struct Home: View {
     @StateObject var taskModel: TaskViewModel = TaskViewModel()
     @Namespace var animation
     
+    //MARK: Core data context
+    @Environment(\.managedObjectContext) var context
+    //MARK: Edit Core Date
+    @Environment(\.editMode) var editButton
+    
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false) {
@@ -91,7 +96,11 @@ struct Home: View {
             , alignment: .bottomTrailing
         )
         .sheet(isPresented: $taskModel.addNewView){
+            // Clear edit Task
+            taskModel.editTask = nil
+        } content: {
             NewTask()
+                .environmentObject(taskModel)
         }
     }
     
@@ -101,32 +110,64 @@ struct Home: View {
         LazyVStack(spacing: 20){
             DynamicFilteredView(dateToFilter: taskModel.currentDay){ (object: Task) in
                 TaskCardView(task: object)
+                
             }
         }
-        
         .padding()
         .padding(.top)
+        
     }
     
     // MARK: Task Card View
     func TaskCardView(task: Task)->some View{
         
-        HStack(alignment: .top,spacing: 30){
-            VStack(spacing: 10){
-                Circle()
-                    .fill(taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? .black : .clear)
-                    .frame(width: 15, height: 15)
-                    .background(  
-                    
-                        Circle()
-                            .stroke(.black,lineWidth: 1)
-                            .padding(-3)
-                    )
-                    .scaleEffect(!taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? 0.8 : 1)
+        HStack(alignment: editButton?.wrappedValue == .active ? .center : .top,spacing: 30){
+            
+            
+            if editButton?.wrappedValue == .active{
                 
-                Rectangle()
-                    .fill(.black)
-                    .frame(width: 3)
+                VStack(spacing: 10){
+                    
+                    if task.taskDate?.compare(Date()) == .orderedDescending || taskModel.isToday(date: task.taskDate ?? Date()) {
+                        Button {
+                            taskModel.editTask = task
+                            taskModel.addNewView.toggle()
+                            
+                        } label: {
+                            Image(systemName: "pencil.circle.fill")
+                                .font(.title)
+                                .foregroundColor(.primary)
+                        }
+                    } 
+                    
+                    Button {
+                        //Delete task
+                        context.delete(task)
+                        
+                        try? context.save()
+                    } label: {
+                        Image(systemName: "minus.circle.fill")
+                            .font(.title)
+                            .foregroundColor(.red)
+                    }
+                }
+            } else {
+                VStack(spacing: 10){
+                    Circle()
+                        .fill(taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? (task.isCompleted ? .green : .black) : .clear)
+                        .frame(width: 15, height: 15)
+                        .background(
+                        
+                            Circle()
+                                .stroke(.black,lineWidth: 1)
+                                .padding(-3)
+                        )
+                        .scaleEffect(!taskModel.isCurrentHour(date: task.taskDate ?? Date()) ? 0.8 : 1)
+                    
+                    Rectangle()
+                        .fill(.black)
+                        .frame(width: 3)
+                }
             }
             
             VStack{
@@ -149,37 +190,28 @@ struct Home: View {
                 
                 if taskModel.isCurrentHour(date: task.taskDate ?? Date()){
                     
-                    // MARK: Team Members
-                    HStack(spacing: 0){
-                        
-                        HStack(spacing: -10){
-                            
-                            ForEach(["User1","User2","User3"],id: \.self){user in
+                    
+                    HStack(spacing: 12){
+                        if !task.isCompleted{
+                            // MARK: Check Button
+                            Button {
+                                task.isCompleted = true
+                                try? context.save()
                                 
-                                Image(user)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 45, height: 45)
-                                    .clipShape(Circle())
-                                    .background(
-                                    
-                                        Circle()
-                                            .stroke(.black,lineWidth: 5)
-                                    )
+                            } label: {
+                                
+                                Image(systemName: "checkmark")
+                                    .foregroundStyle(.black)
+                                    .padding(10)
+                                    .background(Color.white,in: Circle())
                             }
+                            .hLeading()
+                            
                         }
-                        .hLeading()
+                        Text(task.isCompleted ? "Mark Task as Complete" : "Mark Task as Complete")
+                            .font(.system(size: task.isCompleted ? 10 : 12, weight: .light))
+                            .foregroundColor(task.isCompleted ? .gray : .white)
                         
-                        // MARK: Check Button
-                        Button {
-                            
-                        } label: {
-                            
-                            Image(systemName: "checkmark")
-                                .foregroundStyle(.black)
-                                .padding(10)
-                                .background(Color.white,in: RoundedRectangle(cornerRadius: 10))
-                        }
                     }
                     .padding(.top)
                 }
@@ -212,16 +244,7 @@ struct Home: View {
             }
             .hLeading()
             
-            Button {
-                
-            } label: {
-                
-                Image("Profile")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 45, height: 45)
-                    .clipShape(Circle())
-            }
+            EditButton()
 
         }
         .padding()

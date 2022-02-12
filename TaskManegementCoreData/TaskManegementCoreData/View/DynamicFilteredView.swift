@@ -19,7 +19,7 @@ struct DynamicFilteredView<Content: View, T>: View where T: NSManagedObject{
         let calender = Calendar.current
         
         let today = calender.startOfDay(for: dateToFilter)
-        let tommorow = calender.date(byAdding: .day, value: 1, to: dateToFilter)!
+        let tommorow = calender.date(byAdding: .day, value: 1, to: today)!
         
         //Filter key
         let filterKey = "taskDate"
@@ -28,7 +28,7 @@ struct DynamicFilteredView<Content: View, T>: View where T: NSManagedObject{
         let predicate = NSPredicate(format: "\(filterKey) >= %@ AND \(filterKey) < %@", argumentArray: [today, tommorow])
         
         // Initializing Request with NSPredicate
-        _request = FetchRequest(entity: T.entity(), sortDescriptors: [], predicate: predicate)
+        _request = FetchRequest(entity: T.entity(), sortDescriptors: [.init(keyPath: \Task.taskDate, ascending: false)], predicate: predicate)
         self.content = content
     }
     
