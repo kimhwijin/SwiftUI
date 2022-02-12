@@ -99,7 +99,7 @@ struct Home: View {
     func TasksView()->some View{
         
         LazyVStack(spacing: 20){
-            DynamicFilteredView(dateTofilter: taskModel.currentDay){ (object: Task) in
+            DynamicFilteredView(dateToFilter: taskModel.currentDay){ (object: Task) in
                 TaskCardView(task: object)
             }
         }

@@ -14,10 +14,25 @@ struct DynamicFilteredView<Content: View, T>: View where T: NSManagedObject{
     @FetchRequest var request: FetchedResults<T>
     let content: (T)->Content
     
-    init(dateTofilter: Date, @ViewBuilder content: @escaping (T)->Content){
-        _request = FetchRequest(entity: T.entity(), sortDescriptors: [], predicate: nil)
+    init(dateToFilter: Date, @ViewBuilder content: @escaping (T)->Content){
+        
+        let calender = Calendar.current
+        
+        let today = calender.startOfDay(for: dateToFilter)
+        let tommorow = calender.date(byAdding: .day, value: 1, to: dateToFilter)!
+        
+        //Filter key
+        let filterKey = "taskDate"
+        
+        //Fetch task between today and tommorow
+        let predicate = NSPredicate(format: "\(filterKey) >= %@ AND \(filterKey) < %@", argumentArray: [today, tommorow])
+        
+        // Initializing Request with NSPredicate
+        _request = FetchRequest(entity: T.entity(), sortDescriptors: [], predicate: predicate)
         self.content = content
     }
+    
+    
     
     var body: some View {
         Group{
